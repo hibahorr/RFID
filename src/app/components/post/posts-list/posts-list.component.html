@@ -1,0 +1,27 @@
+<h3 class="float-left mb-5 pb-3">Posts</h3>
+
+<div class="py-5 p-2">
+    <hr>
+    <div class="container m-2">
+        <label for="postTitleSearchField">Search for a user's email:</label>
+        <input type="text" class="form-control" name="postTitleSearchField" id="postTitleSearchField" [(ngModel)]="postTitleSearchField">
+        <!-- <label for="typeahead-focus">Search for a category:</label> -->
+        <!-- <input -->
+                <!-- id="typeahead-focus" -->
+                <!-- type="text" -->
+                <!-- class="form-control" -->
+                <!-- [(ngModel)]="categorySearchField" -->
+                <!-- [ngbTypeahead]="search" -->
+                <!-- (focus)="focus$.next($any($event).target.value)" -->
+                <!-- (click)="click$.next($any($event).target.value)" -->
+                <!-- #instance="ngbTypeahead" -->
+        <!-- /> -->
+        <button (click)="resetFields()" class="btn btn-primary">Reset fields</button>
+        <div class="row pb-2">
+            <div class="col-md-4 pb-3" *ngFor="let user of users">
+                <app-post-card  [user]="user" (removedEventEmitter)="deleteItem($event)"></app-post-card>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>

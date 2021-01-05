@@ -1,0 +1,48 @@
+<form [formGroup]="createForm" (ngSubmit)="onSubmit()" >
+    <div class="row">
+       
+        <label class="col-12">
+            firstName:
+            <input type="text" formControlName="title" required>
+        </label>
+        <label class="col-12">
+            lastName:
+            <input type="text" formControlName="title" required>
+        </label>
+        <label class="col-12">
+            profilePicture:
+            <input type="text" formControlName="title" required>
+        </label>
+        <label class="col-12">
+            email:
+            <input type="text" formControlName="title" required>
+        </label>
+        <label class="col-12">
+            password:
+            <textarea formControlName="body"></textarea>
+        </label>
+        <!-- <div formArrayName="categories" class="col-12"> -->
+            <!-- <div *ngFor="let category of categories.controls; let i=index"> -->
+                <!-- <label> -->
+                    <!-- Category: -->
+                    <!-- <input type="text" [formControlName]="i" [value]="category"> -->
+                <!-- </label> -->
+            <!-- </div> -->
+            <!-- <h3>Categories :</h3> <button (click)="addCategory()">Add Category</button> -->
+        <!-- </div> -->
+    </div>
+
+    <button type="submit"[disabled]="!createForm.valid" >Submit</button>
+</form>
+
+<hr>
+
+
+<!-- <p> -->
+    <!-- Form Value: {{ createForm.value | json }} -->
+<!-- </p> -->
+<!-- <p> -->
+    <!-- Form Status: {{ createForm.status }} -->
+<!-- </p> -->
+
+

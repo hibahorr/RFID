@@ -1,0 +1,37 @@
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()" >
+    <div class="row">
+        <label class="col-12">
+            Title:
+            <input type="text" formControlName="title" required>
+        </label>
+        <label class="col-12">
+            Body:
+            <textarea formControlName="body"></textarea>
+        </label>
+        <div formArrayName="categories" class="col-12">
+            <h3>Categories :</h3> <button (click)="addCategory()">Add Category</button>
+
+            <div *ngFor="let category of categories.controls; let i=index">
+                <label>
+                    Category:
+                    <input type="text" [formControlName]="i">
+                    <button class="btn btn-danger" (click)="removeCategory(i)">Delete category</button>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="!editForm.valid">Submit</button>
+</form>
+
+<hr>
+
+
+<p>
+    Form Value: {{ editForm.value | json }}
+</p>
+<p>
+    Form Status: {{ editForm.status }}
+</p>
+
+

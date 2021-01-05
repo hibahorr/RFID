@@ -1,0 +1,41 @@
+<!-- nav -->
+
+<div class="container-fluid full-height">
+  <div class="row full-height">
+    <nav class="col-md-2 d-none d-md-block sidebar full-height">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <h3 class="nav-logo text-center">geuvena</h3>
+          <div class="d-flex box pb-2" *ngIf="currentUser">
+            <a routerLink="/users/profile/update/{{currentUser.id}}">
+              <img src="assets/images/{{profilePicture}}" alt="Avatar" class="avatar">| {{fullName}}
+            </a>
+          </div>
+          <a class="nav-item nav-link" routerLink="/">Home</a>
+
+          <ng-template [ngIf]="currentUser" [ngIfElse]="loggedOut">
+            <h5 class="sidebar-heading">Utilisateur</h5>
+            <a class="nav-item nav-link" routerLink="/posts">Discover more</a>
+            <!-- <a class="nav-item nav-link" routerLink="/posts/new">Ajouter Utilisateur</a> -->
+            <a class="nav-item nav-link" routerLink="/posts">Historique Utilisateur</a>
+
+
+            <h5 class="sidebar-heading">Account</h5>
+            <a class="nav-item nav-link" routerLink="/users/profile/update/{{currentUser.id}}" >My profile</a>
+            <a class="nav-item nav-link" href="#" (click)="logout()">Logout</a>
+          </ng-template>
+          <ng-template #loggedOut>
+            <a class="nav-item nav-link" routerLink="/login">Log In</a>
+          </ng-template>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4 full-height">
+      <alert></alert>
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
+
+

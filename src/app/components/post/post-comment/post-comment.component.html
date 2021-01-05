@@ -1,0 +1,10 @@
+<a class="comment-img" href="#non">
+    <img src="assets/images/{{commenter?.profilePicture}}" alt="" width="50" height="50">
+</a>
+<div class="comment-body">
+    <div class="text">
+        <p>{{comment.content}}</p>
+    </div>
+    <p class="attribution">by :<a href="#non">{{commenter?.lastName  }} {{commenter?.firstName }}</a> {{comment.postedAt | date}}</p>
+    <button class="btn btn-danger" *ngIf="commenter?.id == userId" (click)="deleteComment()">Delete comment</button>
+</div>
