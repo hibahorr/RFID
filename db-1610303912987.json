@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "date_arrivee":"2019-07-04T13:33:03.969Z",
-      "date_depart":"2019-07-04T13:33:03.969Z",
+      "date_arrivee": "2019-07-04T13:33:03.969Z",
+      "date_depart": "2019-07-04T13:33:03.969Z",
       "email": "foo@bar.com",
       "password": "$2a$10$0ubi1U8.xJhVZfnne.AmR.ael6wxCOoCQPsxifV1QcmQWGtbK5v1K",
       "firstName": "aze",
@@ -19,8 +19,8 @@
       ]
     },
     {
-      "date_arrivee":"2019-07-04T13:33:03.969Z",
-      "date_depart":"2019-07-04T13:33:03.969Z",
+      "date_arrivee": "2019-07-04T13:33:03.969Z",
+      "date_depart": "2019-07-04T13:33:03.969Z",
       "email": "salim.benyahya@esprit.tn",
       "password": "$2a$10$V3CNkRo.AWax4phg9FmXPOo2yCzlIIWcjgeLSVKR7Hq/zKxHUYss2",
       "firstName": "Salim",
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "date_arrivee":"2019-07-04T13:33:03.969Z",
-      "date_depart":"2019-07-04T13:33:03.969Z",
+      "date_arrivee": "2019-07-04T13:33:03.969Z",
+      "date_depart": "2019-07-04T13:33:03.969Z",
       "email": "chihab.hajji@esprit.tn",
       "password": "$2a$10$i9F0Fz1Al0HUlRkeUNbcT.e12xXNoH3jYtEN/z39FBmG64SF.IFzO",
       "firstName": "Chihab",
@@ -56,8 +56,8 @@
       ]
     },
     {
-      "date_arrivee":"2019-07-04T13:33:03.969Z",
-      "date_depart":"2019-07-04T13:33:03.969Z",
+      "date_arrivee": "2019-07-04T13:33:03.969Z",
+      "date_depart": "2019-07-04T13:33:03.969Z",
       "email": "fatma@esprit.tn",
       "password": "$2a$10$i9F0Fz1Al0HUlRkeUNbcT.e12xXNoH3jYtEN/z39FBmG64SF.IFzO",
       "firstName": "Fatma",
@@ -74,8 +74,8 @@
       ]
     },
     {
-      "date_arrivee":"2019-07-04T13:33:03.969Z",
-      "date_depart":"2019-07-04T13:33:03.969Z",
+      "date_arrivee": "2019-07-04T13:33:03.969Z",
+      "date_depart": "2019-07-04T13:33:03.969Z",
       "email": "user@user.user",
       "password": "$2a$10$Qyp9cQXVXfZ.lNhaonPQUOf7q4Pih3I/oB/5pxb11nNLm3xVUVlI.",
       "firstName": "user",
@@ -83,8 +83,8 @@
       "id": 5
     },
     {
-      "date_arrivee":"2019-07-04T13:33:03.969Z",
-      "date_depart":"2019-07-04T13:33:03.969Z",
+      "date_arrivee": "2019-07-04T13:33:03.969Z",
+      "date_depart": "2019-07-04T13:33:03.969Z",
       "email": "horchani.nacaeur@gmail.com",
       "password": "$2a$10$BDDvmKtRzr0A.s0RwPyTxuHHGaP9BwD3PcXbXdmUEhd115OosPtIi",
       "firstName": "Naceur",

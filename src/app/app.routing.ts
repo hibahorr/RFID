@@ -23,6 +23,8 @@ const routes: Routes = [
     { path: 'posts/edit/:id', component: EditComponent },
     { path: 'users/profile/:id', component: UserProfileComponent },
     { path: 'users/profile/update/:id', component: UserProfileUpdateComponent },
+    { path: 'users/profile/deleteItem/:id', component: UserProfileUpdateComponent },
+
 
     { path: '**', redirectTo: '' }
 ];

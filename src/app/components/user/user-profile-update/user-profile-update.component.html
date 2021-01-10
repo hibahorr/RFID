@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<h3 class="float-left mb-5 pb-3">Posts </h3>
+<h3 class="float-left mb-5 pb-3">Historique de pointage. </h3>
 <div class="py-5 p-2">
     <hr>
     <div class="container m-2" *ngIf="postsByUser?.length > 0;">
@@ -24,7 +24,23 @@
         </div>
     </div>
     <div *ngIf="postsByUser?.length == 0;" class="container m-2 text-center text-info">
-        This user doesnt have any posts yet.
+        <div class="container m-2" *ngIf="postsByUser?.length > 0;">
+            <div class="row pb-2">
+                <div class="col-md-4 pb-3" *ngFor="let post of postsByUser">
+                    <app-post-card [post]="post" (removedEventEmitter)="deleteItem($event)"></app-post-card>
+                </div>
+            </div>
+        </div>
+        
+        <h4>  First Name : {{user?.firstName | titlecase }} </h4>
+          <h4>Last Name :   {{user?.lastName | titlecase }}</h4>    
+            
+
+   <h2> Heure de pointage :<span>  {{user?.date_arrivee | titlecase }} </span></h2>        
+
+            <h2> Heure de depart :<span>  {{user?.date_depart | titlecase }}</span></h2> 
+        
+        <span>email : {{user?.email}}</span>
     </div>
     <hr>
 </div>
